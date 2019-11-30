@@ -1,4 +1,4 @@
-# Mike Engine
+# The Mikey Engine
 Making my first game rendering engine with opengl and c++
 
 ### Inspired by Sparky engine
