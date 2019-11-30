@@ -2,7 +2,7 @@
 
 int main()
 {
-    using namespace mike;
+    using namespace mikey;
     using namespace graphics;
 
     Window window("Mike!", 960, 540);

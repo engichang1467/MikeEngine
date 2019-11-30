@@ -3,7 +3,7 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 
-namespace mike {
+namespace mikey {
     namespace graphics {
         class Window
         {
