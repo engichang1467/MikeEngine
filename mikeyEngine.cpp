@@ -5,7 +5,7 @@ int main()
     using namespace mikey;
     using namespace graphics;
 
-    Window window("Mike!", 960, 540);
+    Window window("Mikey!", 960, 540);
     glClearColor(0.2f, 0.3f, 0.8f, 1.0f);
 
     std::cout << glGetString(GL_VERSION) << std::endl;
