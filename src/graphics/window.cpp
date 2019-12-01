@@ -38,8 +38,8 @@ namespace mikey {
             glfwSetWindowSizeCallback(m_Window, windowResize);
 
 
-            //Warning: Make sure we check glewInit after we create the context, or else it won't work
-            glewExperimental = GL_TRUE; // Need this so glew can output window on MAC
+            // Warning: Make sure we check glewInit after we create the context, or else it won't work
+            glewExperimental = GL_TRUE; // Need this so it will not seg fault 11 on MACOS
             if (glewInit() != GLEW_OK)
             {
                 std::cout << "Could not initialize GLEW!" << std::endl;
