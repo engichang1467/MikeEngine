@@ -36,6 +36,17 @@ namespace mikey {
 
             glfwMakeContextCurrent(m_Window);
             glfwSetWindowSizeCallback(m_Window, windowResize);
+
+
+            //Warning: Make sure we check glewInit after we create the context, or else it won't work
+            glewExperimental = GL_TRUE; // Need this so glew can output window on MAC
+            if (glewInit() != GLEW_OK)
+            {
+                std::cout << "Could not initialize GLEW!" << std::endl;
+                return false;
+            }
+
+            std::cout << "OpenGL " << glGetString(GL_VERSION) << std::endl;
             return true;
         }
 
