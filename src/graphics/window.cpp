@@ -23,14 +23,14 @@ namespace mikey {
         {
             if (!glfwInit())
             {
-                std::cout << "Fail to initialize GLFW!" << std::endl;
+                printf("Fail to initialize GLFW!\n");
                 return false;
             }
 
             m_Window = glfwCreateWindow(m_Width, m_Height, m_Title, NULL, NULL);
             if (!m_Window)
             {
-                std::cout << "Failed to create GLFW window!" << std::endl;
+                printf("Failed to create GLFW window!\n");
                 return false;
             }
 
@@ -42,11 +42,11 @@ namespace mikey {
             glewExperimental = GL_TRUE; // Need this so it will not seg fault 11 on MACOS
             if (glewInit() != GLEW_OK)
             {
-                std::cout << "Could not initialize GLEW!" << std::endl;
+                printf("Could not initialize GLEW!\n");
                 return false;
             }
 
-            std::cout << "OpenGL " << glGetString(GL_VERSION) << std::endl;
+            printf("OpenGL %s\n", glGetString(GL_VERSION));
             return true;
         }
 

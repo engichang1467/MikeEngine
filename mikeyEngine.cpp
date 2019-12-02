@@ -8,15 +8,15 @@ int main()
     Window window("Mikey!", 960, 540);
     glClearColor(0.2f, 0.3f, 0.8f, 1.0f);
 
-    // std::cout << "working" << std::endl;
+//     printf("Working\n");
     GLuint vao;
     glGenVertexArrays(1, &vao);
     glBindVertexArray(vao);
-    // std::cout << "working" << std::endl;
+//     printf("working\n");
 
     while (!window.closed())
     {
-        // std::cout << window.getWidth() << ", " << window.getHeight() << std::endl;
+        // printf("%d, %d\n", window.getWidth(), window.getHeight());
         window.clear();
 #if 1
         glBegin(GL_QUADS);
