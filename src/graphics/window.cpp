@@ -1,6 +1,6 @@
 #include "window.h"
 
-namespace mikey {
+namespace torpo {
     namespace graphics {
 
         void windowResize(GLFWwindow *window, int width, int height);

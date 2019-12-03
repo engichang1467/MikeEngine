@@ -2,10 +2,10 @@
 
 int main()
 {
-    using namespace mikey;
+    using namespace torpo;
     using namespace graphics;
 
-    Window window("Mikey!", 960, 540);
+    Window window("Torpo!", 960, 540);
     glClearColor(0.2f, 0.3f, 0.8f, 1.0f);
 
 //     printf("Working\n");

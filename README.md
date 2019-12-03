@@ -1,4 +1,4 @@
-# The Mikey Engine
+# The Torpo Engine
 Making my first game rendering engine with OpenGL and C++
 
 ### Inspired by the Sparky engine

@@ -19,11 +19,11 @@ all: engine srcPrep
 srcPrep: $(cppsrc) $(hsrc)
 	g++ -Wall -c $(cppsrc) $(LDFLAGS)
 
-engine: mikeyEngine.o $(osrc)
-	g++ -Wall -o engine mikeyEngine.o $(osrc) $(LDFLAGS)
+engine: torpoEngine.o $(osrc)
+	g++ -Wall -o engine torpoEngine.o $(osrc) $(LDFLAGS)
 
-mikeyEngine.o: mikeyEngine.cpp $(hsrc)
-	g++ -Wall -c mikeyEngine.cpp $(LDFLAGS)
+torpoEngine.o: torpoEngine.cpp $(hsrc)
+	g++ -Wall -c torpoEngine.cpp $(LDFLAGS)
 
 clean:
 	rm -f engine *.o $(osrc)
