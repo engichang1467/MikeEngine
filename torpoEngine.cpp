@@ -1,7 +1,10 @@
+#include <time.h>
 #include "src/graphics/window.h"
 
 int main()
 {
+    clock_t begin = clock();
+
     using namespace torpo;
     using namespace graphics;
 
@@ -30,6 +33,11 @@ int main()
 #endif
         window.update();
     }
+
+    clock_t end = clock();
+    double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+
+    printf("Time: %lf\n", time_spent);
 
     // system("PAUSE");    
     return 0;
