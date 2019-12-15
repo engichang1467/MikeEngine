@@ -1,4 +1,5 @@
 #include <time.h>
+#include <typeinfo>
 #include "src/graphics/window.h"
 
 int main()
@@ -21,6 +22,18 @@ int main()
     {
         // printf("%d, %d\n", window.getWidth(), window.getHeight());
         window.clear();
+
+        // if (window.isKeyPressed(GLFW_KEY_A))
+        //     printf("PRESSED!\n");
+
+        // if (window.isMouseButtonPressed(GLFW_MOUSE_BUTTON_LEFT))
+        //     printf("PRESSED!\n");
+        
+        double x, y;
+        window.getMousePosition(x, y);
+        printf("%d, %d\n", static_cast<int>(x), static_cast<int>(y));
+    
+
 #if 1
         glBegin(GL_QUADS);
         glVertex2f(-0.5f, -0.5f);
